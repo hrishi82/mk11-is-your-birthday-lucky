@@ -9,10 +9,10 @@ function checkBirthdayIsLucky(){
 
     const dob =  birthDate.value.replaceAll("-","");
     const sum = evaluateDOB(dob)
-    if(sum && luckyNumber >= 0 ){
+    if(sum && Number(luckyNumber.value) >= 0 ){
         checklucky(sum);
     }else{
-        output.innerText = "Please enter values in both the fields";
+        output.innerText = "Please enter correct values in both the fields";
     }
 
     

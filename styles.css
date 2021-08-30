@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--bck-color);
+    font-family: 'Montserrat', sans-serif; 
+}
+
+:root{
+    --bck-color: #0081a7;
+    --text: #fdfcdc;
+    --btn-color: #fcbf49;
+}
+
+.container{
+    width: 50%;
+    margin:auto;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.header{
+    color: var(--text);
+    font-size: 2.8rem;
+}
+
+
+/* ---------- labels ----------- */
+.date-input-label{
+    color: var(--text);
+    display: block;
+    margin-top: 50px; 
+    font-size: 1.3rem; 
+}
+
+.lucky-number-label{
+    color: var(--text);
+    display: block;
+    margin-top: 30px; 
+    font-size: 1.3rem; 
+}
+
+
+/* ---------- input-box ----------- */
+
+#date-input, #lucky-number{
+    display:block;
+    margin: auto;
+    padding: 10px;
+    border-radius: 1.5rem;
+    border: none;
+    width: 25%;
+}
+
+/* ---------- output ----------- */
+
+
+
+
+/* ---------- output ----------- */
+
+#btn-check{
+    display:block;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px 30px;
+    border-radius: 2rem;
+    border: none;
+    background-color: var(--btn-color); 
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.output{
+    display:block;
+    margin: auto;
+    margin-top: 30px;
+    color: var(--text);
+    font-weight: bold;
+    font-size: 1.5rem; 
+}
