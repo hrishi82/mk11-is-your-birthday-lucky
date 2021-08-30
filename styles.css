@@ -11,6 +11,7 @@ body{
     --bck-color: #0081a7;
     --text: #fdfcdc;
     --btn-color: #fcbf49;
+    --footer-color: #a9d6e5;
 }
 
 .container{
@@ -53,12 +54,20 @@ body{
     width: 25%;
 }
 
-/* ---------- output ----------- */
-
-
-
 
 /* ---------- output ----------- */
+
+.output{
+    display:block;
+    margin: auto;
+    margin-top: 30px;
+    color: var(--text);
+    font-weight: bold;
+    font-size: 1.5rem; 
+}
+
+
+/* ---------- Check button ----------- */
 
 #btn-check{
     display:block;
@@ -72,11 +81,139 @@ body{
     font-size: 1rem;
 }
 
-.output{
-    display:block;
-    margin: auto;
-    margin-top: 30px;
-    color: var(--text);
-    font-weight: bold;
-    font-size: 1.5rem; 
+
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--footer-color);
+    text-align: center;
+    height: 100px;
+    
 }
+
+
+.icon{
+    margin-top: 15px;
+    height: 30px;
+    width: 30px;
+} 
+
+
+.non-bullet-list{
+    list-style: none;    
+}
+
+.icon-list-inline{
+    display: inline;
+    padding: 0rem 2rem;
+
+}
+
+
+
+
+/* Reference: https://www.w3schools.com/howto/howto_css_modals.asp */
+/* Modal Header */
+.modal-header {
+    padding-top: 2px;
+    padding-right: 1px;
+    padding-bottom: 2px;
+    padding-left: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+  }
+  
+  /* Modal Body */
+  .modal-body {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+  
+.close{
+    float:right;
+    padding: 0px 10px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius: 0.5rem;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+    
+  }
+  
+  /* Popup Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+
+
+
+/* Reference: https://codepen.io/websplash/pen/OJmjYVo */
+  /* Confetti Animation */
+  @keyframes confetti-slow {
+    0% {
+      transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+    100% {
+      transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg);
+    }
+  }
+  @keyframes confetti-medium {
+    0% {
+      transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+    100% {
+      transform: translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg);
+    }
+  }
+  @keyframes confetti-fast {
+    0% {
+      transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+    100% {
+      transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg);
+    }
+  }
+  .confetti-container {
+    perspective: 700px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+  }
+  .confetti {
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    border-radius: 0;
+    
+  }
+  .confetti--animation-slow {
+    animation: confetti-slow 2.25s linear 1 forwards;
+  }
+  .confetti--animation-medium {
+    animation: confetti-medium 1.75s linear 1 forwards;
+  }
+  .confetti--animation-fast {
+    animation: confetti-fast 1.25s linear 1 forwards;
+  }
+
+ 
+  
